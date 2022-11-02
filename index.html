@@ -13,17 +13,21 @@
 	<body>
 
 		<h1>NBA Stats</h1>
-		<input type="text" name="" value="">
+		<input type="text" class= "player" name="" value="">
 		<button type="button" name="button">Check</button>
 
 		<h2>Name</h2>
 		<h3 class = 'team'>Team</h3>
         <h3 class = 'position'>Position</h3>
 		<h3>Stats</h3>
-        <div class = 'statsContainer'>
-            <form action="" method="post">
+		<form action="">
+			<label for="year">Any year from 197* - current</label>
+			<input class="year" type="number" min="1970" max="2099" step="1" value="2022" />
+		</form>
+        <div class = 'stats-container'>
+            <!-- <form action="" method="post">
                 <select name="" id="chooseStat"></select>
-            </form>
+            </form> -->
         </div>
 
 		<script type="text/javascript" src="main.js"></script>
