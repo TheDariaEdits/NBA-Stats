@@ -19,16 +19,36 @@
 		<h2>Name</h2>
 		<h3 class = 'team'>Team</h3>
         <h3 class = 'position'>Position</h3>
-		<h3>Stats</h3>
 		<form action="">
 			<label for="year">Any year from 197* - current</label>
 			<input class="year" type="number" min="1970" max="2099" step="1" value="2022" />
+			<label for="stats">Stat:</label>
+			<select name="Stats" id="stats">
+  			<option value="ast">ast</option>
+  			<option value="blk">blk</option>
+  			<option value="dreb">dreb</option>
+  			<option value="fg3_pct">fg3_pct</option>
+			<option value="fg3a">ast</option>
+  			<option value="fg3m">blk</option>
+  			<option value="fg_pct">dreb</option>
+  			<option value="fga">fg3_pct</option>
+			<option value="fgm">ast</option>
+  			<option value="ft_pct">blk</option>
+  			<option value="oreb">dreb</option>
+  			<option value="pts">fg3_pct</option>
+			<option value="reb">blk</option>
+  			<option value="stl">dreb</option>
+  			<option value="turnover">fg3_pct</option>
+			</select>
 		</form>
-        <div class = 'stats-container'>
-            <!-- <form action="" method="post">
-                <select name="" id="chooseStat"></select>
-            </form> -->
-        </div>
+		<div class="stats-container">
+			<table id="table">
+				<tr>
+				  <th id="game-date-column">Game</th>
+				  <th id="stat-column"></th>
+				</tr>
+			</table>
+		</div>
 
 		<script type="text/javascript" src="main.js"></script>
 	</body>
