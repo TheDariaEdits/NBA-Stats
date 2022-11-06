@@ -7,17 +7,42 @@
     box-sizing: border-box;
   }
   
-  /******************************************
-  /* LAYOUT
-  /*******************************************/
-  img{
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
     display: block;
     margin: 0 auto;
     height: 200px;
   }
+
+:root{
+  --color-primary: rgb(238, 238, 238);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(0, 0, 0);
+  --color-red: rgb(199, 42, 28);
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  min-height: 100vh;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
   
-  
-  /******************************************
-  /* ADDITIONAL STYLES
-  /*******************************************/
-  
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+html{
+  background-color: var(--color-primary);
+}
+
+.stats-container{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}

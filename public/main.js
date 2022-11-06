@@ -1,4 +1,9 @@
-//The user will enter a NBA player, click on the type of stat, team, and receive their stats. Default will be all stats?
+//The user will enter a NBA player, click on the type of stat, team, and receive their stats. 
+function init() {
+    document.getElementById("search").value = ""
+};
+
+window.onload = init();
 
 const teams = [
         {
@@ -123,7 +128,7 @@ const teams = [
         }
     ]
 
-document.querySelector('button').addEventListener('click', apiRequest)
+document.querySelector('button').addEventListener('click', apiRequest);
 
 function apiRequest() {
     const player = document.querySelector('input').value;
@@ -170,6 +175,7 @@ function apiRequest() {
         }).catch(err => {
             console.log(`error ${err}`)
         });
+    init();
     }
 
 const table = document.getElementById("myTable");
