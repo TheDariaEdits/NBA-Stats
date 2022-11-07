@@ -10,24 +10,24 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
-img{
+img {
     display: block;
     margin: 0 auto;
     height: 200px;
   }
 
-:root{
+:root {
   --color-primary: rgb(238, 238, 238);
   --color-white: rgb(255, 255, 255);
   --color-black: rgb(0, 0, 0);
   --color-red: rgb(199, 42, 28);
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
-body{
+body {
   min-height: 100vh;
   max-width: 80%;
   margin: auto;
@@ -37,12 +37,31 @@ body{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-html{
+html {
   background-color: var(--color-primary);
 }
 
-.stats-container{
+.stats-container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+}
+
+table {
+  width: 50%;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+tr:hover {
+  background-color: var(--color-red);
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.hidden{
+  display: none;
 }

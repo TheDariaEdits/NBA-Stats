@@ -155,6 +155,7 @@ function apiRequest() {
                 .then(response => response.json())
                 .then(data => {
                     console.log("got second fetch() result");
+                    table.classList.remove('hidden')
                     table.innerHTML = ""
                     data.data.forEach(e => {
                         let date = e['game'].date.slice(0,10);
@@ -165,12 +166,7 @@ function apiRequest() {
                         cell1.innerHTML = date;
                         cell2.innerHTML = selectedStat;
                     })})
-                //     array[index] = { ...e, ...data };
-                //     data.data.forEach(e => {
-                //         let date = e['game'].date.slice(0,10);
-                //         let selectedStat =  e[`${stat}`]
-                //         console.log( date + ' ' + selectedStat)
-                // });
+              
 
         }).catch(err => {
             console.log(`error ${err}`)
