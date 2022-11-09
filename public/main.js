@@ -132,7 +132,7 @@ document.querySelector('button').addEventListener('click', apiRequest);
 
 function apiRequest() {
     const player = document.querySelector('input').value;
-    const season = document.querySelector('input[type="number"]').value;
+    const season = document.querySelector('.year').value;
     const stat = document.querySelector('#stats').value;
     const table = document.getElementById('table');
 

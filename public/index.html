@@ -5,20 +5,21 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>NBA Stats</title>
+		<title>Check the Stats</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-
-		<h1>NBA Stats</h1>
+		<img src="media/Check the Stats (1).png" alt="Check the Stats">
+		<h3>A NBA Stat API</h3>
+		<label for="player-name">Name: </label>
 		<input type="text" class= "player" id= "search" name="" value="">
 		<button type="button" name="button">Check</button>
 
-		<h2>Name</h2>
-		<h3 class = "team">Team</h3>
-        <h3 class = "position">Position</h3>
+		<h2></h2>
+		<h3 class = "team"></h3>
+        <h3 class = "position"></h3>
 		<form action="">
 			<label for="year">Any year from 197* - current</label>
 			<input class="year" type="number" min="1970" max="2099" step="1" value="2022" />
@@ -36,16 +37,16 @@
   			<option value="ft_pct">blk</option>
   			<option value="oreb">dreb</option>
   			<option value="pts">fg3_pct</option>
-			<option value="reb">blk</option>
+			<option value="reb">reb</option>
   			<option value="stl">dreb</option>
   			<option value="turnover">fg3_pct</option>
 			</select>
 		</form>
-		<div class="stats-container hidden">
-			<table id="table">
+		<div class="stats-container">
+			<table id="table" class="hidden">
 				<tr>
-				  <th id="game-date-column"></th>
-				  <th id="stat-column"></th>
+				  <th id="game-date-column">Game</th>
+				  <th id="stat-column">Stat</th>
 				</tr>
 			</table>
 		</div>

@@ -9,7 +9,8 @@ app.use(cors());
 app.use( express.json() );
 app.use(express.urlencoded({    
     extended: true})); 
-app.use(express.static("public"));
+app.use(express.static('public'));
+app.use('/public', express.static(__dirname + '/media'));
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');

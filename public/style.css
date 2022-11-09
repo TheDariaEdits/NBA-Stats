@@ -13,7 +13,7 @@
 img {
     display: block;
     margin: 0 auto;
-    height: 200px;
+    height: 150px;
   }
 
 :root {
@@ -54,6 +54,7 @@ table {
 table, th, td {
   border: 1px solid;
 }
+
 tr:hover {
   background-color: var(--color-red);
 }
