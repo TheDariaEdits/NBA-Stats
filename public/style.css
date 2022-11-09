@@ -10,12 +10,6 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
-img {
-    display: block;
-    margin: 0 auto;
-    height: 150px;
-  }
-
 :root {
   --color-primary: rgb(238, 238, 238);
   --color-white: rgb(255, 255, 255);
@@ -28,9 +22,10 @@ html {
 }
 
 body {
-  min-height: 100vh;
   max-width: 80%;
   margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
   text-align: center;
 }
   
@@ -41,6 +36,16 @@ html {
   background-color: var(--color-primary);
 }
 
+input, option {
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+}
+
 .stats-container {
   display: flex;
   flex-flow: row nowrap;
@@ -48,11 +53,15 @@ html {
 }
 
 table {
-  width: 50%;
+  width: 40%;
 }
 
 table, th, td {
   border: 1px solid;
+}
+
+th {
+  font-size: 2.5rem;
 }
 
 tr:hover {

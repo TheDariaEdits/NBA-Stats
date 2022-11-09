@@ -9,19 +9,24 @@
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="style.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+		
 	</head>
 	<body>
-		<img src="media/Check the Stats (1).png" alt="Check the Stats">
+		<img src="media/Check the Stats.png" alt="Check the Stats">
 		<h3>A NBA Stat API</h3>
 		<label for="player-name">Name: </label>
 		<input type="text" class= "player" id= "search" name="" value="">
 		<button type="button" name="button">Check</button>
 
-		<h2></h2>
+		<h2 class="name"></h2>
 		<h3 class = "team"></h3>
         <h3 class = "position"></h3>
 		<form action="">
-			<label for="year">Any year from 197* - current</label>
+			<label for="year"></label>
 			<input class="year" type="number" min="1970" max="2099" step="1" value="2022" />
 			<label for="stats">Stat:</label>
 			<select name="Stats" id="stats">
